@@ -1,0 +1,269 @@
+* { box-sizing: border-box; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; margin: 0; padding: 0;}
+
+p {
+    color: black;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    font-size: 1rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.landing {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+.main_container {
+    min-height: 100vh;
+    /* background-image: url('DSC_0306.jpg') 90% 90%/cover no-repeat; */
+    background: linear-gradient(to bottom left, rgba(255, 245, 238, 0.4), rgba(210, 180, 140, 0.4)),
+    					url("assets/DSC_0306.jpg") 90% 25%/cover no-repeat;
+    display: grid;
+    grid-template-rows: 50px 1fr 150px;
+    grid-template-areas: 'navbar' 
+                            'middle_image' 
+                            'name';
+
+}
+
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    list-style: none;
+}
+
+#home {
+    margin-left: auto;
+    padding: 1rem;
+    color: midnightblue;
+    font-weight: 300;
+    font-size: 2rem;
+}
+#bio {
+    padding: .5rem;
+    color: midnightblue;
+    font-weight: 300;
+    font-size: 2rem;
+    text-decoration: none;
+}
+#resume {
+    margin-left: auto;
+    padding: .5rem;
+    color: midnightblue;
+    font-weight: 300;
+    font-size: 2rem;
+    text-decoration: none;
+}
+#projects {
+    padding: .5rem;
+    padding-right: 1rem;
+    color: midnightblue;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.socials {
+    display: flex;
+    /* grid-template-columns: 5rem 5rem 5rem 1fr;
+    grid-template-areas: 'email linkedin github nothing';
+    font-size: 2rem; */
+}
+
+#email {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#linkedin {
+    padding-right: 20px;
+}
+#github {
+    padding-left: 0px;
+}
+
+
+.middle_image {
+    grid-area: middle_image;
+}
+
+.name {
+    grid-area: name;
+}
+
+
+.name_text {
+    color: midnightblue;
+    /* text-align: left; */
+    font-weight: 550;
+    font-size: 6rem;
+    padding-left: 30px;
+}
+
+#about_text {
+    text-align: left;
+    padding: 2rem 2rem 2rem 2rem;
+    font-size: 1.25rem;
+    background: linear-gradient(to bottom , rgba(210, 180, 140, 0.5), rgba(255, 248, 220, 0.5));
+
+}
+
+
+.bar {
+    border-color: black;
+    border: 10px inset;
+    overflow: hidden;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-block-start: auto;
+    margin-block-end: auto;
+}
+
+#line_background {
+    background-color: rgba(255, 248, 220, 0.5);
+}
+
+.line {
+    border: 1px solid black;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background: rgba(255, 248, 220, 0.5);
+}
+
+.education_projects {
+    background: rgba(255, 248, 220, 0.5);
+    padding: 2rem 2rem 2rem 2rem;
+    font-size: 1.25rem;
+}
+
+.nav__link {
+    color: midnightblue;
+    font-size: 2rem;
+}
+
+ h1 {
+    font-size: 3rem;
+    font-weight: 200;
+    text-align: left;
+    color: midnightblue;
+}
+
+#projects_text {
+    padding-top: 1rem;
+}
+
+#classes_text {
+    padding-top: 1rem;
+}
+
+#about_me {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 100;
+    color: midnightblue;
+}
+
+.project_container {
+    border: 3px solid midnightblue;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: rgba(210, 180, 140, 0.2);
+}
+
+#urop_images {
+    display:flex;
+    justify-content: space-around;
+}
+
+.img_caption {
+    width: 90%;
+    text-align: center;
+}
+
+.urop_image {
+    width: 90%;
+    padding-top: 1rem;
+}
+
+.project_text {
+    padding: 1rem 0 1rem 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+
+.classes_list {
+    margin-left: 1rem;
+}
+
+#education_text {
+    padding-left: 1rem;
+}
+
+footer {
+    text-align: center;
+    background: rgba(210, 180, 140, 0.4);
+}
+
+@media screen and (max-width: 1000px){
+    .name_text {
+        font-size: 5rem;
+    }
+
+    #urop_images {
+        flex-wrap: wrap;
+    }
+
+    /* .urop_image {
+        width: 5rem;
+    }
+    .img_caption {
+        width: 5rem;
+    } */
+}
+
+/* .container {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+/* .scroll-section {
+
+}  */
+/* 
+.container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.scroll-section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+#scroll-section-2 {
+    scroll-snap-align: revert;
+} */
+
+.software_engineer {
+    color: midnightblue;
+    font-size: 2rem;
+    padding-left: 20px;
+    font-weight: 550;
+}
