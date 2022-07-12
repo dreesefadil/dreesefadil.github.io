@@ -219,6 +219,13 @@ footer {
     background: rgba(210, 180, 140, 0.4);
 }
 
+.software_engineer {
+    color: midnightblue;
+    font-size: 2rem;
+    padding-left: 20px;
+    font-weight: 550;
+}
+
 @media screen and (max-width: 1000px){
     .name_text {
         font-size: 5rem;
@@ -226,6 +233,37 @@ footer {
 
     #urop_images {
         flex-wrap: wrap;
+    }
+    
+    .main_container{
+        background: linear-gradient(to bottom left, rgba(255, 245, 238, 0.4), rgba(210, 180, 140, 0.4)),
+    					url("assets/DSC_0306_Mobile.jpg") 90% 25%/cover no-repeat;
+        color: rgb(255, 245, 238);
+        grid-template-rows: 50px 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'name navbar'
+                                'blank black';
+    }
+    
+    .name {
+        padding-top: 1rem;
+        font-size: 2rem;
+        font-weight: 550;
+    }
+    .navbar {
+        padding-top: 2.75rem;
+    }
+    #resume{
+        font-size: 2rem;
+        font-weight: 550;
+    }
+    #bio{
+        font-size: 2rem;
+        font-weight: 550;
+    }
+    #projects{
+        font-size: 2rem;
+        font-weight: 550;
     }
 
     /* .urop_image {
@@ -261,10 +299,3 @@ footer {
 #scroll-section-2 {
     scroll-snap-align: revert;
 } */
-
-.software_engineer {
-    color: midnightblue;
-    font-size: 2rem;
-    padding-left: 20px;
-    font-weight: 550;
-}
