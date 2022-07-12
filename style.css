@@ -21,6 +21,7 @@ html{
 
 .main_container {
     min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
     /* background-image: url('DSC_0306.jpg') 90% 90%/cover no-repeat; */
     background: linear-gradient(to bottom left, rgba(255, 245, 238, 0.4), rgba(210, 180, 140, 0.4)),
     					url("assets/DSC_0306.jpg") 90% 25%/cover no-repeat;
