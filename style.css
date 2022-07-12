@@ -179,6 +179,8 @@ h2 {
     padding: 1rem;
     margin: 1rem;
     background-color: rgba(210, 180, 140, 0.2);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.2));
 }
 
 #urop_images {
