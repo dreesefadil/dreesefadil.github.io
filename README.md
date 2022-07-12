@@ -1,2 +1,2 @@
-# dreesefadil.github.io
-Personal website
+# dreesefadil.com
+Welcome to my personal website! I built this portfolio using HTML, CSS, and JavaScript.
