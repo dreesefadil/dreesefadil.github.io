@@ -22,7 +22,6 @@ html{
 .main_container {
     min-height: 100vh;
     min-height: calc(var(--vh, 1vh) * 100);
-    /* background-image: url('DSC_0306.jpg') 90% 90%/cover no-repeat; */
     background: linear-gradient(to bottom left, rgba(255, 245, 238, 0.4), rgba(210, 180, 140, 0.4)),
     					url("assets/DSC_0306.jpg") 90% 25%/cover no-repeat;
     display: grid;
@@ -71,9 +70,6 @@ html{
 
 .socials {
     display: flex;
-    /* grid-template-columns: 5rem 5rem 5rem 1fr;
-    grid-template-areas: 'email linkedin github nothing';
-    font-size: 2rem; */
 }
 
 #email {
@@ -99,7 +95,6 @@ html{
 
 .name_text {
     color: midnightblue;
-    /* text-align: left; */
     font-weight: 550;
     font-size: 6rem;
     padding-left: 30px;
@@ -267,37 +262,4 @@ footer {
         font-size: 2rem;
         font-weight: 550;
     }
-
-    /* .urop_image {
-        width: 5rem;
-    }
-    .img_caption {
-        width: 5rem;
-    } */
 }
-
-/* .container {
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-}
-
-/* .scroll-section {
-
-}  */
-/* 
-.container {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-}
-
-.scroll-section {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-}
-
-#scroll-section-2 {
-    scroll-snap-align: revert;
-} */
